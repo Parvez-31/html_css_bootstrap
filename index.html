@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        border: 1px solid;
+        height: 700px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .box {
+        height: 100px;
+        width: 100px;
+      }
+
+      .green {
+        background-color: green;
+      }
+      .yellow {
+        background-color: yellow;
+      }
+      .red {
+        background-color: red;
+        /* justify-self: flex-end; */
+        align-self: flex-end;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box green"></div>
+      <div class="box yellow"></div>
+      <div class="box red"></div>
+    </div>
+  </body>
+</html>

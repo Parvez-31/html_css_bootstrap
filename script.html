@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Table Design</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+        background: white;
+        font-family: "Arial", sans-serif;
+      }
+
+      table {
+        width: 820px;
+        border-collapse: collapse;
+        border: 3px solid;
+        background: white;
+      }
+
+      th,
+      td {
+        border: 2px solid;
+        padding: 14px;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 18px;
+      }
+
+      .title {
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        background: whitesmoke;
+      }
+
+      .section-head {
+        background: gray;
+        font-weight: 700;
+        font-size: 20px;
+      }
+
+      .person-cell {
+        background: cyan;
+      }
+
+      .photo {
+        background: cyan;
+        width: 160px;
+      }
+
+      .dept {
+        background: yellow;
+      }
+
+      .right-col {
+        background: yellow;
+        width: 180px;
+      }
+
+      .bottom-left {
+        background: white;
+        font-size: 18px;
+      }
+
+      .bottom-mid {
+        background: white;
+      }
+
+      .bottom-right {
+        background: white;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th class="title" colspan="4">TABLE DESIGN</th>
+      </tr>
+
+      <tr>
+        <th class="section-head" colspan="2">Person</th>
+        <th class="section-head" colspan="2">Department</th>
+      </tr>
+
+      <tr>
+        <td class="person-cell">Name</td>
+        <td class="photo" rowspan="4">Photo</td>
+        <td class="dept">Name</td>
+        <td class="right-col" rowspan="2">Image</td>
+      </tr>
+
+      <tr>
+        <td class="person-cell">Surname</td>
+        <td class="dept">Structure</td>
+      </tr>
+
+      <tr>
+        <td class="person-cell">State</td>
+        <td class="dept">Floor</td>
+        <td class="right-col" rowspan="2">QR code</td>
+      </tr>
+
+      <tr>
+        <td class="person-cell">City</td>
+        <td class="dept">Room</td>
+      </tr>
+
+      <tr>
+        <td class="bottom-left" colspan="2">E-mail</td>
+        <td class="bottom-mid">Tel number</td>
+        <td class="bottom-right">Image</td>
+      </tr>
+    </table>
+  </body>
+</html>
