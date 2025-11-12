@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      main {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .parent-circle {
+        height: 400px;
+        width: 400px;
+        background-color: black;
+        border-radius: 100%;
+        position: relative;
+        z-index: 0;
+      }
+
+      .child-cirle-1 {
+        height: 100px;
+        width: 100px;
+        border: 2px solid;
+        border-radius: 100%;
+        position: absolute;
+        left: 26px;
+      }
+      .child-cirle-red {
+        height: 200px;
+        width: 200px;
+        background-color: red;
+        border-radius: 100%;
+        position: absolute;
+        left: 225px;
+        top: 248px;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="parent-circle">
+        <div class="child-cirle-1"></div>
+        <div class="child-cirle-red"></div>
+      </div>
+    </main>
+  </body>
+</html>

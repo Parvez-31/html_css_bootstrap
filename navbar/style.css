@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+section img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Logo */
+.logo {
+  display: inline-block;
+  width: 110px;
+}
+
+/* Links */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links li a {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+/* Button */
+
+.cmn-btn {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  padding: 20px 40px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.cmn-btn:hover {
+  background-color: blue;
+}
+
+/* navbar end */
+
+/* banner start */
+.banner {
+  background: linear-gradient(rgba(225, 0, 0, 0.4), rgba(90, 209, 144, 0.4)),
+    url("./image/hero-img.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  display: flex;
+  align-items: center;
+}
+
+/* .banner-child {
+ 
+} */
+
+h1,
+.heading-1 {
+  font-size: 75px;
+  margin-bottom: 30px;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+
+p {
+  font-size: 26px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.btn-btn {
+  background-color: green;
+}
+
+/* banner end */
