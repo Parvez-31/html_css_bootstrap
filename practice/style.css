@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: beige;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+img {
+  max-width: 100%;
+}
+
+.cm-gap {
+  padding: 100px 0;
+}
+
+/* navbar start */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: block;
+  width: 110px;
+}
+
+.list-link {
+  display: flex;
+}
+
+.list-link li {
+  list-style: none;
+  margin-left: 15px;
+}
+
+.list-link li a {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.cm-btn {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: aquamarine;
+  padding: 20px 40px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 2px;
+}
+
+/* navbar end */
+
+/* Hero section start */
+.banner {
+  background: url("./image/hero.jpg") no-repeat;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+h1,
+.heading-1 {
+  font-size: 50px;
+  color: #3104f8;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 20px;
+  color: #0c0c0c;
+  line-height: 1.2;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.banner-btn {
+  background-color: #3104f8;
+  color: #fff;
+}
+/* Hero section end */
+
+/* About section start */
+
+.child-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 -15px;
+}
+
+.left,
+.right {
+  width: 50%;
+  padding: 0 15px;
+}
+
+/* About section end */
+
+/* card section start */
+figure > img {
+  width: 400px;
+  border-radius: 10px 10px 0 0;
+}
+
+.child-card {
+  display: flex;
+}
+
+.first-card,
+.second-card,
+.third-card {
+  margin-left: 10px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+h3 {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.cls {
+  font-size: 18px;
+  width: 80%;
+  margin: 10px 0;
+}
+
+.first-card {
+  /* background-color: #3104f8; */
+}
+.second-card {
+  background-color: hsl(135, 97%, 49%);
+}
+.third-card {
+  background-color: #d33a3a;
+}
+
+/* card section end */
