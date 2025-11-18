@@ -70,6 +70,7 @@ img {
   font-weight: bold;
   color: black;
   letter-spacing: 2px;
+  border: 1px solid;
 }
 
 /* navbar end */
@@ -92,10 +93,9 @@ h1,
 }
 
 p {
-  font-size: 20px;
+  font-size: 16px;
   color: #0c0c0c;
   line-height: 1.2;
-  width: 50%;
   margin-bottom: 10px;
 }
 
@@ -123,42 +123,50 @@ p {
 /* About section end */
 
 /* card section start */
-figure > img {
-  width: 400px;
-  border-radius: 10px 10px 0 0;
+
+.card-upper h2 {
+  font-size: 35px;
 }
 
-.child-card {
+.card-child {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 30px 0;
 }
 
-.first-card,
-.second-card,
-.third-card {
-  margin-left: 10px;
-  border: 1px solid;
+.cmn-card {
+  width: calc(33.33% - 15px);
+  border: 2px solid;
   border-radius: 10px;
+  padding: 5px;
+  box-shadow: 5px 5px 5px #aa9d9d;
+  position: relative;
 }
 
-h3 {
-  font-size: 25px;
-  text-transform: uppercase;
+.cmn-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgb(221, 220, 141)
+  );
 }
 
-.cls {
-  font-size: 18px;
-  width: 80%;
-  margin: 10px 0;
+.card-img figure img {
+  border-radius: 10px;
+  height: 300px;
 }
 
-.first-card {
-  /* background-color: #3104f8; */
+.card-upper,
+.card-lower {
+  text-align: center;
 }
-.second-card {
-  background-color: hsl(135, 97%, 49%);
-}
-.third-card {
-  background-color: #d33a3a;
+
+.card-btn {
+  border: 1px soild;
 }
 
 /* card section end */
